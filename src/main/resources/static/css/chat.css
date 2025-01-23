@@ -1,0 +1,255 @@
+.ftco-section .chat {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ftco-section .card {
+    height: 500px;
+    border-radius: 15px !important;
+    background-color: rgba(25, 42, 86, 0.7) !important;
+
+}
+
+.ftco-section .contacts_body {
+    padding: 0.75rem 0 !important;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.ftco-section .msg_card_body {
+    overflow-y: auto;
+}
+
+.ftco-section .card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 0 !important;
+}
+
+.ftco-section .card-footer {
+    border-radius: 0 0 15px 15px !important;
+    border-top: 0 !important;
+}
+
+.ftco-section .container {
+    align-content: center;
+}
+
+.ftco-section .search {
+    border-radius: 15px 0 0 15px !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+}
+
+.ftco-section .search:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.ftco-section .type_msg {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+    height: 60px !important;
+    overflow-y: auto;
+}
+
+.ftco-section .type_msg:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.ftco-section .attach_btn {
+    border-radius: 15px 0 0 15px !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.ftco-section .send_btn {
+    border-radius: 0 15px 15px 0 !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.ftco-section .search_btn {
+    border-radius: 0 15px 15px 0 !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.ftco-section .contacts {
+    list-style: none;
+    padding: 0;
+}
+
+.ftco-section .contacts li {
+    width: 100% !important;
+    padding: 5px 10px;
+    margin-bottom: 15px !important;
+}
+
+.ftco-section .active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ftco-section .user_img {
+    height: 70px;
+    width: 70px;
+    border: 2px solid #f5f6fa;
+}
+
+.ftco-section .user_img_msg {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #f5f6fa;
+}
+
+.ftco-section .img_cont {
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+.ftco-section .img_cont_msg {
+    height: 40px;
+    width: 40px;
+}
+
+.ftco-section .online_icon {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    bottom: 0.2em;
+    right: 0.4em;
+    border: 2px solid white;
+}
+
+.ftco-section .offline {
+    background-color: #c23616 !important;
+}
+
+.ftco-section .user_info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+.ftco-section .user_info span {
+    font-size: 20px;
+    color: white;
+}
+
+.ftco-section .user_info p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.ftco-section .video_cam {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.ftco-section .video_cam span {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.ftco-section .msg_cotainer {
+    background-color: rgba(221, 160, 221, 0.9);
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+    display: inline-block;
+    min-height: 40px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.ftco-section .msg_cotainer_send {
+    background-color: rgba(144, 238, 144, 0.8);
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+    display: inline-block;
+    min-height: 40px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.ftco-section .msg_time {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+}
+
+.ftco-section .msg_time_send {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+}
+
+.ftco-section .msg_head {
+    position: relative;
+}
+
+.ftco-section #action_menu_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.ftco-section .action_menu {
+    z-index: 1;
+    position: absolute;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    top: 30px;
+    right: 15px;
+    display: none;
+}
+
+.ftco-section .action_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ftco-section .action_menu ul li {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+
+.ftco-section .action_menu ul li i {
+    padding-right: 10px;
+}
+
+.ftco-section .action_menu ul li:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+    .ftco-section .contacts_card {
+        margin-bottom: 15px !important;
+    }
+}
