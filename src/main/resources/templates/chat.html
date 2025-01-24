@@ -105,6 +105,66 @@
     </div>
 </section>
 
+<!-- CitizenAI chatbot -->
+<section class="ftco-section">
+    <style>
+        .send_btn:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    </style>
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h2 style="font-size: 29px;">CitizenAI: Your Smart Assistant</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid h-100 ftco-animate" style="position: relative; top: -17px;">
+        <div class="row justify-content-center h-100">
+            <div class="col-md-8 col-xl-6 chat">
+                <div class="card">
+                    <div class="card-header msg_head">
+                        <div class="d-flex bd-highlight">
+                            <div class="img_cont">
+                                <img
+                                        src="../static/images/robot.jpg"
+                                        class="rounded-circle user_img"
+                                />
+                                <span class="online_icon"></span>
+                            </div>
+                            <div class="user_info">
+                                <span style="font-family: 'Lobster', cursive;">CitizenAI</span>
+                                <p style="font-size: 12px;">How can I assist you?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="messageForm" class="card-body msg_card_body"></div>
+                    <div class="card-footer">
+                        <form id="messageArea" class="input-group">
+                            <input
+                                    type="text"
+                                    id="text"
+                                    name="msg"
+                                    placeholder="Type your message..."
+                                    autocomplete="off"
+                                    class="form-control type_msg"
+                                    required
+                                    style="font-size: 14px;"
+                            />
+                            <div class="input-group-append">
+                                <button type="submit" id="send" class="input-group-text send_btn">
+                                    <i class="fas fa-location-arrow"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Adding the necessary JavaScript files -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 <script src="../static/js/migrate.js"></script>
