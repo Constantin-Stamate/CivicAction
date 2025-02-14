@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civic Action</title>
+    <title>Civic Action - Login</title>
 
     <!-- Placing the Civic Action application logo -->
-    <link rel="icon" type="image/x-icon" href="../static/images/favicon.png">
+    <link rel="icon" type="image/x-icon" th:href="@{/images/favicon.png}">
 
     <!-- Adding the necessary CSS styles -->
-    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
 </head>
 
-<body>
+<body th:style="|background: url(@{/images/backgrounds/authentication_background.jpg}) no-repeat center; background-size: cover;|">
 
-<!-- Create login form -->
 <div class="wrapper">
-    <form action="#">
+    <form th:action="@{/login}" method="post">
         <h2>Login</h2>
+
         <div class="input-field">
-            <input type="text" required>
+            <input type="text" name="username" required>
             <label>Enter your email</label>
         </div>
+
         <div class="input-field">
-            <input type="password" required>
+            <input type="password" name="password" required>
             <label>Enter your password</label>
         </div>
+
         <button type="submit">Login</button>
+
         <div class="register">
-            <p>Don't have an account? <a href="registration.html">Register Here</a></p>
+            <p>Don't have an account? <a th:href="@{/register}">Register Here</a></p>
         </div>
     </form>
 </div>
