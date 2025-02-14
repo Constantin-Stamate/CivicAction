@@ -46,14 +46,10 @@
                                         style="font-size: 17px; font-family: 'Lobster', cursive;">CitizenAI</a></li>
                 <li class="nav-item"><a th:href="@{/contact}" class="nav-link"
                                         style="font-size: 17px; font-family: 'Lobster', cursive;">Contact</a></li>
-
-                <!-- Afișează LOGIN doar dacă utilizatorul NU este autentificat -->
                 <li sec:authorize="!isAuthenticated()" class="nav-item">
                     <a th:href="@{/login}" class="nav-link"
                        style="font-size: 17px; font-family: 'Lobster', cursive;">Login</a>
                 </li>
-
-                <!-- Afișează LOGOUT doar dacă utilizatorul ESTE autentificat -->
                 <li sec:authorize="isAuthenticated()" class="nav-item">
                     <a th:href="@{/logout}" class="nav-link"
                        style="font-size: 17px; font-family: 'Lobster', cursive;">Logout</a>
