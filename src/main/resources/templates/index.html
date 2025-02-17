@@ -95,7 +95,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <form action="#" class="booking-form">
+                <form th:action="@{/submit/law}" method="POST" class="booking-form">
                     <div class="row">
                         <div class="col-md d-flex">
                             <div class="form-group p-4 align-self-stretch d-flex align-items-end">
@@ -103,7 +103,7 @@
                                     <label for="userName">Enter name</label>
                                     <input type="text" class="form-control"
                                            style="font-family: 'Times New Roman', Times, serif; font-size: 17px;"
-                                           id="userName" placeholder="Proposed by">
+                                           id="userName" name="userName" placeholder="Proposed by">
                                 </div>
                             </div>
                         </div>
@@ -114,10 +114,10 @@
                                     <div class="form-field">
                                         <div class="select-wrap">
                                             <div class="icon"><span class="fas fa-chevron-up"></span></div>
-                                            <select id="userGender" class="form-control"
+                                            <select id="userGender" name="userGender" class="form-control"
                                                     style="font-family: 'Times New Roman', Times, serif; font-size: 17px;">
-                                                <option value="">Male</option>
-                                                <option value="">Female</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
                                             </select>
                                         </div>
                                     </div>
@@ -130,7 +130,7 @@
                                     <label for="lawDescription">Describe the law</label>
                                     <input type="text" class="form-control"
                                            style="font-family: 'Times New Roman', Times, serif; font-size: 17px;"
-                                           id="lawDescription" placeholder="Description of the law">
+                                           id="lawDescription" name="lawDescription" placeholder="Description of the law">
                                 </div>
                             </div>
                         </div>
@@ -141,14 +141,14 @@
                                     <div class="form-field">
                                         <div class="select-wrap">
                                             <div class="icon"><span class="fas fa-chevron-up"></span></div>
-                                            <select id="lawCategory" class="form-control"
+                                            <select id="lawCategory" name="lawCategory" class="form-control"
                                                     style="font-family: 'Times New Roman', Times, serif; font-size: 17px;">
-                                                <option value="">Education</option>
-                                                <option value="">Health</option>
-                                                <option value="">Economy</option>
-                                                <option value="">Environment</option>
-                                                <option value="">Justice</option>
-                                                <option value="">Other</option>
+                                                <option value="Education">Education</option>
+                                                <option value="Health">Health</option>
+                                                <option value="Economy">Economy</option>
+                                                <option value="Environment">Environment</option>
+                                                <option value="Justice">Justice</option>
+                                                <option value="Other">Other</option>
                                             </select>
                                         </div>
                                     </div>
