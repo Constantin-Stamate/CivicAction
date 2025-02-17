@@ -580,41 +580,17 @@
                 <div class="row ftco-animate">
                     <div class="col-md-12">
                         <div class="carousel-testimony owl-carousel ftco-owl">
-                            <div class="item">
+                            <div class="item" th:each="law : ${lawsAll}">
                                 <div class="testimony-wrap py-4 pb-5">
                                     <div class="user-img mb-4"
-                                         th:style="|background-image: url(@{/images/users/user_1.png});|">
-		                    <span class="quote d-flex align-items-center justify-content-center">
-		                      <i class="fas fa-quote-left"></i>
-		                    </span>
+                                         th:style="|background-image: url(@{${law.userImage}});|">
+                                        <span class="quote d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
                                     </div>
                                     <div class="text text-center">
-                                        <p class="mb-4">This proposal aims to transform unused land in cities
-                                            into urban gardens where local communities can grow fruit and
-                                            vegetables. The project would encourage sustainability, reduce
-                                            pollution and promote a healthy lifestyle. Also, the gardens
-                                            would become spaces for socialization and ecological education
-                                            for the inhabitants.</p>
-                                        <p class="name">Popescu Ion</p>
-                                        <span class="position">User</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimony-wrap py-4 pb-5">
-                                    <div class="user-img mb-4"
-                                         th:style="|background-image: url(@{/images/users/user_2.png});|">
-                            <span class="quote d-flex align-items-center justify-content-center">
-                                <i class="fas fa-quote-left"></i>
-                            </span>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p class="mb-4">This initiative proposes installing solar panels on
-                                            public buildings to reduce energy costs and promote renewable
-                                            energy. By harnessing solar power, the community can lower carbon
-                                            emissions while setting an example for sustainable living.</p>
-                                        <p class="name">Maria Ionescu</p>
+                                        <p class="mb-4" th:text="${law.lawDescription}"></p>
+                                        <p class="name" th:text="${law.userName}"></p>
                                         <span class="position">User</span>
                                     </div>
                                 </div>
