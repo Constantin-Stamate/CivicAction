@@ -17,7 +17,7 @@ public class LawController {
     @Autowired
     private NavigationController navigationController;
 
-    @PostMapping("/submit/law")
+    @PostMapping("/law/submit")
     public String saveLaw(@RequestParam("userName") String userName,
                           @RequestParam("userGender") String userGender,
                           @RequestParam("lawDescription") String lawDescription,
